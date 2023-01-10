@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} 
+
+{% block content%}
+  <div class="St-Head">
+    <p>status : on(background ijo)/off(background merah) </p>
+  </div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3880557741677!2d106.67352851423817!3d-6.343763863830567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e5ab3d01e03b%3A0xb98f4c27e24202ec!2sInstitut%20Teknologi%20Indonesia!5e0!3m2!1sid!2sid!4v1670296468984!5m2!1sid!2sid" 
+  width="100%" height="600" style="border:0;" allowfullscreen=""
+  loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+<div class="St-foot">
+  <button type="button" class="btn btn-primary btn-lg btn-block">On/Off</button>
+</div>
+<hr>
+
+<div class="Ket-Pas">
+  <h3>Informasi Pasien</h3>
+  <div class="card-KP">
+      <p>Biaya Jasa :</p>
+      <p>------</p>
+      <p>Biaya Admin :</p>
+      <p>------</p>
+  </div>
+  <div class="card-KP">
+      <hr class="total">
+      <p>Biaya Jasa :</p>
+      <p>------</p>
+      <p>Biaya Admin :</p>
+      <p>------</p>
+  </div>
+
+</div>
+
+{% endblock %}

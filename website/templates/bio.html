@@ -1,0 +1,96 @@
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='login_style.css') }}">
+{% endblock %}
+
+{% extends "base.html" %} {% block title %}Biodata{% endblock %} 
+
+{% block content%}
+<div class="biodata">
+  <div class="title-bio">
+    <h2>Masukkan biodata anda</h2>
+    <p>lengkapi biodata anda untuk menjadi perawat Eldion</p>
+  </div>
+  <br>
+  <form>
+    <div class="BP">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputName">Nama Lengkap</label>
+          <input type="name" class="form-control" id="inputName" placeholder="Nama Lengkap">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email Anda yang Terdaftar">
+        </div>
+      </div>
+      <div class="form-group2 col-md-4">
+        <label for="inputHandphone">No.Telp</label>
+        <input type="text" class="form-control" id="telfon" placeholder="Nomer Telfon">
+      </div>
+    </div>
+      <hr>
+      <!-- alamat -->
+      <div class="AP">
+        <h2>Alamat Anda</h2>
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="provinsi">Provinsi</label>
+            <select id="provinsi" class="form-control">
+              <option selected>--Pilih Provinsi--</option>
+              <option>DKI Jakarta</option>
+              <option>Banten</option>
+              <option>jawa Barat</option>
+              <option>Yogyakarta</option>
+              <option>jawa Timur</option>
+            </select>
+          </div>
+          <div class="form-group col-md-7">
+            <label for="inputCity">Kota</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Alamat</label>
+          <input type="text" class="form-control" id="alamat" placeholder="Alamat Lengkap">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Alamat 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Alamat Lengkap">
+        </div>  
+      </div>
+      <hr>
+
+      <!-- Kondisi -->
+      <h2>File Pelengkap</h2>
+      <div class="Kondisi-Pasien d-flex">
+        <div class="KP-card1 col-md-6">
+          <!-- 1 -->
+          <p>masukkan file STR terbaru anda</p>
+          <label for="myfile">Select a file:</label>
+          <input type="file" id="myfile" name="myfile">   
+          <hr>
+          <!-- 2 -->
+          <p>masukkan file STR terbaru anda</p>
+          <label for="myfile">Select a file:</label>
+          <input type="file" id="myfile" name="myfile">   
+        </div>
+        <!-- card 2 -->
+        <div class="KP-card2 col-md-6">
+          <!-- 1 -->
+          <p>masukkan file STR terbaru anda</p>
+          <label for="myfile">Select a file:</label>
+          <input type="file" id="myfile" name="myfile">   
+          <hr>
+          <!-- 2 -->
+          <p>masukkan file STR terbaru anda</p>
+          <label for="myfile">Select a file:</label>
+          <input type="file" id="myfile" name="myfile">   
+        </div>
+      </div>
+      <br>
+      <!-- button -->
+      <button type="submit" class="btn btn-primary">Selesai</button>
+    </form>
+
+</div>
+{% endblock %}
